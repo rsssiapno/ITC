@@ -1,12 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="number"], button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .converter {
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h2>Temperature Converter</h2>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <!-- Celsius to Fahrenheit Conversion -->
+    <div class="converter">
+        <input type="number" id="celsius" placeholder="Enter Celsius">
+        <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+        <p id="resultF"></p>
+    </div>
 
+    <!-- Fahrenheit to Celsius Conversion -->
+    <div class="converter">
+        <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
+        <button onclick="convertToCelsius()">Convert to Celsius</button>
+        <p id="resultC"></p>
+    </div>
+
+    <script>
+        function convertToFahrenheit() {
+            const celsius = document.getElementById('celsius').value;
+            if (celsius === '') {
+                alert('Please enter a Celsius value.');
+                return;
+            }
+            const fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('resultF').textContent = `${celsius}°C is ${fahrenheit.toFixed(2)}°F`;
+        }
+
+        function convertToCelsius() {
+            const fahrenheit = document.getElementById('fahrenheit').value;
+            if (fahrenheit === '') {
+                alert('Please enter a Fahrenheit value.');
+                return;
+            }
+            const celsius = (fahrenheit - 32) * 5/9;
+            document.getElementById('resultC').textContent = `${fahrenheit}°F is ${celsius.toFixed(2)}°C`;
+        }
+    </script>
 </body>
 </html>
