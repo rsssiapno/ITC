@@ -1,62 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        input[type="number"], button {
-            padding: 10px;
-            font-size: 16px;
-            margin: 5px;
-        }
-        .converter {
-            margin: 20px;
-        }
-    </style>
+    <title>House of Sage</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h2>Temperature Converter</h2>
-
-    <!-- Celsius to Fahrenheit Conversion -->
-    <div class="converter">
-        <input type="number" id="celsius" placeholder="Enter Celsius">
-        <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
-        <p id="resultF"></p>
-    </div>
-
-    <!-- Fahrenheit to Celsius Conversion -->
-    <div class="converter">
-        <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
-        <button onclick="convertToCelsius()">Convert to Celsius</button>
-        <p id="resultC"></p>
-    </div>
-
-    <script>
-        function convertToFahrenheit() {
-            const celsius = document.getElementById('celsius').value;
-            if (celsius === '') {
-                alert('Please enter a Celsius value.');
-                return;
-            }
-            const fahrenheit = (celsius * 9/5) + 32;
-            document.getElementById('resultF').textContent = `${celsius}°C is ${fahrenheit.toFixed(2)}°F`;
-        }
-
-        function convertToCelsius() {
-            const fahrenheit = document.getElementById('fahrenheit').value;
-            if (fahrenheit === '') {
-                alert('Please enter a Fahrenheit value.');
-                return;
-            }
-            const celsius = (fahrenheit - 32) * 5/9;
-            document.getElementById('resultC').textContent = `${fahrenheit}°F is ${celsius.toFixed(2)}°C`;
-        }
-    </script>
+<div class="House">
+    <header class="header">
+        <h1>House of Sage</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <a href="temp.html" section class="card">Conversion</section>
+        <br>
+        <a href="payroll.html" section class="card">Simple Payroll</section>
+        <br>
+        <a href="natural numbers.html" section class="card">Factorial, Sum, Average of First N Natural Numbers</section>
+        <br>
+        <a href="income.html" section class="card">Income Tax</section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 House of Sage</p>
+    </footer>
+</div>
 </body>
 </html>
+
+
