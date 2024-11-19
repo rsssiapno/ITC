@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Futura;
+    background-color: #471a60;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: header;
+    background-color: #e00202; 
+    background-image: url('Assets/LightfallLegendary.jpg'); 
+    background-size: cover; 
+    background-position: 0px -155px; 
+    background-repeat: no-repeat; 
+    color: white; 
+    background-color: #e00202;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719); /* Adjust opacity for the desired darkness */
+    z-index: 1; /* Ensures the overlay is above the background but below the content */
+}
+.content {
+    position: relative;
+    z-index: 2; /* Ensures content appears above the overlay */
+    color: white; /* Keeps the text readable */
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #444;
+    color: white;
+    padding: 1rem;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 1rem;
+}
+.sidebar nav ul li {
+    margin: 1rem 0;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.sidebar nav ul li a:hover {
+    color: #00bcd4;
+}
+.content {
+    grid-area: content;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: none;
+    padding: 20px;
+    padding-left:0;
+    padding-right:0;
+    text-align: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
