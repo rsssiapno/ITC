@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: Futura;
+    background-color: #f9f4f4;
 }
 
 .dashboard {
@@ -18,7 +18,7 @@ body {
 /* Header */
 .header {
     grid-area: header;
-    background-color: #333;
+    background-color: #111010;
     color: white;
     text-align: center;
     padding: 1rem;
