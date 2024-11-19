@@ -1,0 +1,145 @@
+/* General styles */
+body {
+    font-family: Futura;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #e00202;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and form styles */
+.info {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+#buttonsdiv {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e00202;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table styles */
+#listdiv {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#employeeNum,
+#delEmployee {
+    width: 100px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+/* Dialog styles */
+dialog {
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+dialog h4 {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+dialog button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #0056b3;
+}
+
+/* Back to Home link */
+#backHome {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#backHome:hover {
+    text-decoration: underline;
+}

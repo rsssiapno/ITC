@@ -17,11 +17,20 @@ body {
 
 /* Header */
 .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     grid-area: header;
-    background-color: #111010;
+    background-color: #e00202; /* Fallback color if the image doesn't load */
+    background-image: url('Assets/Optimus.jpg'); /* Replace with your image file path */
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: 0px -240px; /* Center the image within the header */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color for contrast */
+    background-color: #e00202;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
 }
 
 /* Sidebar */
