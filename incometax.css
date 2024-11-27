@@ -1,6 +1,9 @@
 body {
     font-family: Futura;
     background-color: #471a60;
+    background-image: url('Assets/ZephyrConcourse.png');
+    background-size:cover;
+    background-repeat:no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
