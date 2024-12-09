@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    font-family: Helvetica;
+    font-family: Futura;
+    font-size: 100%;
     background-color: #471a60;
 }
-
 .dashboard {
     display: grid;
     grid-template-areas: 
@@ -24,6 +24,10 @@ body {
     text-align: center;
     padding: 10px;
     position: relative;
+    background-image: url(Assets/efrideet.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
 }
 .overlay {
     position: absolute;
@@ -31,13 +35,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.719); /* Adjust opacity for the desired darkness */
     z-index: 1; /* Ensures the overlay is above the background but below the content */
 }
 .content {
     position: relative;
     z-index: 2; /* Ensures content appears above the overlay */
-    color: white; /* Keeps the text readable */
+    color: rgb(255, 255, 255); /* Keeps the text readable */
 }
 .sidebar {
     grid-area: sidebar;
@@ -65,24 +68,32 @@ body {
     grid-area: content;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    justify-content: center;
 }
-
 .card {
-    font-family: Helvetica;
+    font-family: Futura;
+    font-weight:bold;
+    text-align: center;
+    font-size:1rem;
+    color:#000000;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
-    box-shadow: none;
+    box-shadow: 0 4px 6px;
     padding: 20px;
     padding-left:0;
     padding-right:0;
-    text-align: center;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
 }
-
-/* Footer */
-.footer {
+.card:hover {
+    background: #000000;
+    color: white;
+    transform: scale(1.10);
+}.footer {
     grid-area: footer;
     background-color: #000000;
     color: inherit;
@@ -91,4 +102,9 @@ body {
     text-decoration: none;
     pointer-events: none;
     cursor: default;
+}.footer a{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
 }
