@@ -1,76 +1,147 @@
+/* Original body styling */
 body {
-    font-family: Futura;
-    margin: 20px;
-    background-color: #f9f9f9;
-    background-image: url('Assets/tfs-media-wallpaper-4.jpg');
-    background-size:cover;
-    background-repeat:no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Header styling */
-  h1 {
-    font-size: 2rem;
-    color: #4CAF50;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Label and input styling */
-  label {
-    font-size: 1rem;
-    margin-right: 10px;
-  }
-  
-  input[type="number"] {
-    padding: 5px 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 7px 15px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Subheading styling */
-  h3 {
-    font-size: 1.5rem;
-    color: #555;
-    margin-top: 20px;
-  }
-  
-  /* Paragraph styling */
-  p {
-    font-size: 1rem;
-  }
-  
-  /* Number list styling */
-  #nnumbers {
-    font-family: monospace;
-    font-size: 1.1rem;
-    margin-top: 10px;
-    white-space: pre-wrap;
-    padding: 10px;
-    background-color: #f1f1f1;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
+  font-family: Futura;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  background-image: url('Assets/tfs-media-wallpaper-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  color: #476697ff;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #476697ff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #476697ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+/* Label styling */
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #476697ff;
+}
+
+/* Input field styling */
+input[type="number"] {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #476697ff;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #476697ff;
+  outline: none;
+  box-shadow: 0 0 5px #476697ff;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #476697ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #3b5571;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #2a3f50;
+  transform: scale(1);
+}
+
+/* Subheading styling */
+h3 {
+  font-size: 1.8rem;
+  color: #476697ff;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #476697ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+/* Results paragraph styling */
+p#factorialOutput,
+p#sumOutput,
+p#averageOutput {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #476697ff;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #476697ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+/* Box around input and label */
+.input-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 20px;
+  border: 2px solid #476697ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Back-to-main-page link */
+a {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #476697ff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #476697ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #476697ff;
+  text-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}

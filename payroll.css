@@ -5,10 +5,11 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    background-image: url(Assets/);
 }
 
 header {
-    background-color: #e00202;
+    background-color: #476697ff;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -50,7 +51,7 @@ input[type="number"] {
 }
 
 button {
-    background-color: #e00202;
+    background-color: #476697ff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -61,7 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: #471a60;
+    background-color: #476697ff;
 }
 
 /* Table styles */
@@ -82,7 +83,7 @@ table {
 }
 
 thead {
-    background-color: #007bff;
+    background-color: #476697ff;
     color: #fff;
 }
 

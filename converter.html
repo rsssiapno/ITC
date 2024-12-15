@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="converter.css">
+    <title>Simple Converter</title>
+</head>
+<body>
     <h2>Simple Converter</h2>
 
-    <!-- Celsius to Fahrenheit Conversion -->
+    <!-- Conversion Tool -->
     <div class="converter">
-        <input type="number" id="celsius" placeholder="Enter Celsius">
-        <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
-        <p id="resultF"></p>
-    </div>
+        <label for="conversion-select">Choose a conversion:</label>
+        <select id="conversion-select">
+            <option value="c-to-f">Celsius to Fahrenheit</option>
+            <option value="f-to-c">Fahrenheit to Celsius</option>
+            <option value="m-to-ft">Meters to Feet</option>
+            <option value="ft-to-m">Feet to Meters</option>
+        </select>
 
-    <!-- Fahrenheit to Celsius Conversion -->
-    <div class="converter">
-        <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
-        <button onclick="convertToCelsius()">Convert to Celsius</button>
-        <p id="resultC"></p>
+        <input type="number" id="input-value" placeholder="Enter value">
+        <button onclick="convert()">Convert</button>
+        <p>Result: <span id="result">--</span></p>
     </div>
-
 <script src="JS Scripts/Converter.js"></script>
-
+<p>
+    <a href="index.html" id="backHome">Return to Home Page</a>
+</p>
 </body>
 </html>

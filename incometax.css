@@ -1,6 +1,6 @@
 body {
     font-family: Futura;
-    background-color: #471a60;
+    background-color: #ffffff;
     background-image: url('Assets/ZephyrConcourse.png');
     background-size:cover;
     background-repeat:no-repeat;
@@ -14,21 +14,21 @@ body {
 .container {
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #476697ff;
     padding: 30px;
     width: 300px;
     text-align: center;
 }
 
 h1 {
-    color: #333;
+    color: #476697ff;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
 label {
     display: block;
-    color: #555;
+    color: #476697ff;
     font-size: 14px;
     margin: 15px 0 5px;
 }
@@ -52,3 +52,32 @@ input[readonly] {
     color: #333;
     font-weight: bold;
 }
+
+.button {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add spacing above the button */
+  }
+  
+  /* Style for the "Go Back to Home Page" button */
+  #backHome {
+    display: inline-block;
+    background-color: #476697ff; /* Blue background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #476697ff; /* Border matching the background */
+    transition: all 0.3s ease; /* Smooth hover transition */
+  }
+  
+  #backHome:hover {
+    background-color: white; /* Change background on hover */
+    color: #476697ff; /* Change text color on hover */
+    border-color: #476697ff; /* Retain border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  }
+  
+  #backHome:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+  }

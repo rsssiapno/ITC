@@ -1,25 +1,25 @@
-function ShowNumbers() {
+function calculateResults() {
+  const n = parseInt(document.getElementById("nlimit").value);
 
-    var nlimit,i,ntext;
+  if (isNaN(n) || n < 1) {
+    alert("Please enter a valid natural number (1 or higher).");
+    return;
+  }
 
-    nlimit = document.getElementById("nlimit").value;
+  // Calculate factorial
+  let factorial = 1;
+  for (let i = 1; i <= n; i++) {
+    factorial *= i;
+  }
 
-    ntext="";
-    i=1;
+  // Calculate summation
+  const sum = (n * (n + 1)) / 2;
 
-   do {
-         ntext += i+" ";
-         i++;
-    } while (i <= nlimit);
+  // Calculate average
+  const average = sum / n;
 
-    console.log(nlimit);
-    console.log(ntext);
-
-    document.getElementById("ntitle").innerHTML=
-      "The first "+nlimit+" natural numbers are:";
-
-    document.getElementById("nnumbers").innerHTML=
-       ntext;
-
-
+  // Display results
+  document.getElementById("factorialOutput").textContent = `Factorial: ${factorial}`;
+  document.getElementById("sumOutput").textContent = `Summation: ${sum}`;
+  document.getElementById("averageOutput").textContent = `Average: ${average}`;
 }

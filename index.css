@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Futura;
     font-size: 100%;
-    background-color: #471a60;
+    background-color: #000000;
 }
 .dashboard {
     display: grid;
@@ -19,8 +19,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     grid-area: header;
-    color: rgb(255, 255, 255); 
-    background-color: #e00202;
+    color: #000000; 
     text-align: center;
     padding: 10px;
     position: relative;
@@ -91,7 +90,7 @@ body {
 }
 .card:hover {
     background: #000000;
-    color: white;
+    color: #ffae00;
     transform: scale(1.10);
 }.footer {
     grid-area: footer;

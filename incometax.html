@@ -9,17 +9,17 @@
 <body>
     <div class="container">
         <h1>Income Tax Calculator</h1>
-        <label>Taxable Income</label>
-        <input type="number" id="ti" onkeyup="computeTax()">
-        <label>Tax Payable:</label>
-        <input type="number" id="incometax" readonly>
+        <label for="taxableIncome">Taxable Income</label>
+        <input type="number" id="taxableIncome" onkeyup="incomeTax()">
+        <label for="taxPayable">Tax Payable:</label>
+        <input type="number" id="taxPayable" readonly>
+
+        <div class="button">
+            <p>
+                <a href="index.html" id="backHome">Return to Home Page</a>
+            </p>
+        </div>
     </div>
-
     <script src="JS Scripts/IncomeTax.js"></script>
-    
-    <p>
-        <a href = "index.html" id="backHome">Go Back to Home Page</a>
-    </p>
-
 </body>
 </html>

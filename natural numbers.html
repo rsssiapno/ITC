@@ -7,17 +7,24 @@
 </head>
 <body>
 
-<h1>Factorial, Sum, Average of First N Natural Numbers</h1>
+<h1>Factorial, Sum, and Average of a Natural Number</h1>
 <br>
-<p>
-<label for="nlimit">Input a value for n:</label>
-<input id="nlimit" type="number"></input>
-<button onclick="ShowNumbers()">Show Numbers</button>
-</p>
-<h3 id="ntitle"></h3>
+<div class="input-box">
+  <p>
+    <label for="nlimit">Input a value for n:</label>
+    <input id="nlimit" type="number" min="1" placeholder="Enter a number"></input>
+    <button onclick="calculateResults()">Calculate</button>
+  </p>
+</div>
 
-<p id="nnumbers"></p>
+<h3>Results:</h3>
+<p id="factorialOutput">Factorial: </p>
+<p id="sumOutput">Summation: </p>
+<p id="averageOutput">Average: </p>
+
 <script src="JS Scripts/Factorial, Sum, Average of First N Natural Numbers.js"></script>
-</body>
 
+<a href="index.html" id="backHome">Return to Main Page</a>
+
+</body>
 </html>

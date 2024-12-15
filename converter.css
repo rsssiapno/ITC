@@ -1,0 +1,63 @@
+body {
+    font-family: Futura;
+    text-align: center;
+    margin: 0;
+    background-image: url(Assets/tfs-media-wallpaper-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.converter {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+input, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #476697ff;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #476697ff;
+}
+#result {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+a {
+    display: inline-block;
+    background-color: #476697ff; /* Green background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #476697ff; /* Border matching the background */
+    transition: all 0.3s ease; /* Smooth hover transition */
+  }
+  
+  a:hover {
+    background-color: white; /* Change background on hover */
+    color: #476697ff; /* Change text color on hover */
+    border-color: #476697ff; /* Retain border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+  }
+  
+  .home-button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+  }
